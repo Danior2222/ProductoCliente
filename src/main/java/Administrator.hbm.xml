@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="co.com.biblio.vo.Administrator" table="administrator">
+		<id name = "idadministrator" column = "idadministrator">
+         <generator class="native"/>
+      	</id>
+      	
+		<property name="identificationadm" column="identification_admin" />
+		<property name="usernameadm" column="username_admin" />
+		<property name="firstnameadm" column="first_name"/>
+		<property name="lastnameadm" column="last_name"/>
+		<property name="phoneadm" column="phone_admin"/>
+		<property name="emailadm" column="email_admin"/>
+		<property name="idadvisor" column="idadvisor"/>
+		<property name="idcostumer" column="idcostumer"/>
+		<property name="idUser" column="idUser"/>
+		
+	
+	</class>
+</hibernate-mapping>
